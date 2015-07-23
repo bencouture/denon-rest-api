@@ -6,8 +6,10 @@ RUN apt-get update
 # install nodejs and npm
 RUN apt-get install -y nodejs npm #git git-core
 
-#ADD * /api/
+ADD lib/* /api/
 
-RUN chmod +x /api/lib/server.js
+RUN chmod +x /api/server.js
 
-CMD node /api/lib/server.js
+EXPOSE 8000
+
+CMD node /api/server.js
