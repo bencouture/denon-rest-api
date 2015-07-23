@@ -1,0 +1,21 @@
+{
+  "name"       : "denon-rest-api",
+  "version"    : "1.0.0",
+  "author"  : "B. Couture <ben.couture@hotmail.com>",   
+  "description": "Expose a REST API for a Denon web-enabled receiver",
+  "main"       : "lib/server.js",
+  "keywords": [
+    "denon",
+    "av",
+	"avr",
+    "receiver",
+    "remote",
+	"rest",
+    "telnet"
+  ],  
+  "dependencies": {
+    "express"  : "4.13.1",
+    "socket.io": "*"
+  },
+  "license":"MIT"
+}
