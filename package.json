@@ -17,5 +17,9 @@
     "express"  : "4.13.1",
     "socket.io": "*"
   },
+  "repository":{
+	"type":"git",
+	"url":"https://github.com/bmb56/denon-rest-api"
+  },
   "license":"MIT"
 }
