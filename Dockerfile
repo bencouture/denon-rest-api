@@ -12,4 +12,4 @@ RUN chmod +x /api/server.js
 
 EXPOSE 8000
 
-CMD node /api/
+CMD /usr/local/bin/node /api/
