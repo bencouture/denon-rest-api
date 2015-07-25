@@ -12,4 +12,4 @@ ADD * /api/
 
 EXPOSE 8000
 
-CMD /usr/local/bin/nodejs /api/
+CMD /usr/bin/nodejs /api/
