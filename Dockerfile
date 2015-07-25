@@ -12,5 +12,5 @@ ADD . /api/
 
 RUN cd /api/; npm install
 
-EXPOSE $PORT
+EXPOSE 8000
 CMD /usr/bin/nodejs /api $ADDRESS $PORT
