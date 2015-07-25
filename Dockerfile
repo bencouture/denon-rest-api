@@ -10,8 +10,7 @@ ADD * /api/
 
 #RUN chmod +x /api/server.js
 
-RUN cd /api/
-RUN npm install
+RUN cd /api/; npm install
 
 EXPOSE 8000
 CMD /usr/bin/nodejs /api $ADDRESS $PORT
