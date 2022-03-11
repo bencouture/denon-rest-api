@@ -4,6 +4,9 @@
   "author"  : "B. Couture <ben.couture@hotmail.com>",   
   "description": "Expose a REST API for a Denon web-enabled receiver",
   "main"       : "lib/server.js",
+  "scripts": {
+    "start": "node lib/server.js"
+  },
   "keywords": [
     "denon",
     "av",
