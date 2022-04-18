@@ -1,16 +1,17 @@
-FROM ubuntu
-
-# make sure apt is up to date
-RUN apt-get update
-
-# install nodejs and npm
-RUN apt-get install -y nodejs npm #git git-core
-
+FROM node:alpine
 ADD . /api/
 
-#RUN chmod +x /api/server.js
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-RUN cd /api/; npm install
+# Copy and install dependencies
+COPY package.json /usr/src/app/
+RUN npm install --production
 
+# Copy everything else
+COPY . /usr/src/app
+
+# Expose the web service port
 EXPOSE 8000
-CMD /usr/bin/nodejs /api $ADDRESS 8000
+
+CMD node . $ADDRESS 8000
