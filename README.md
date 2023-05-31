@@ -10,7 +10,7 @@ The included Dockerfile will install the dependencies and run on an Ubuntu image
 ADDRESS environment variable to the IP address of the receiver you want to connect to. Port 8000
 is exposed by default.
 
-## Running from comamnd line
+## Running from command line
 1) Navigate to the root of this project in the command line.
 1) Install Node (http://nodejs.org) and execute `npm install`. 
 2) Run `node . [ip address of receiver] [optional port]` to launch the web server. Port 8000 is used by default.
